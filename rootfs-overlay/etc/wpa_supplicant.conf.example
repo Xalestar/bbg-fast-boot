@@ -1,0 +1,9 @@
+# Copy this file to wpa_supplicant.conf and fill in your credentials
+ctrl_interface=/var/run/wpa_supplicant
+ap_scan=1
+
+network={
+    ssid="YOUR_WIFI_SSID"
+    key_mgmt=WPA-PSK
+    psk="YOUR_WIFI_PASSWORD"
+}
