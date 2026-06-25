@@ -1,0 +1,19 @@
+# 編譯產物
+output/
+images/
+*.swp
+*~
+
+# 機密設定檔（使用者需從 .example 複製並填入自己的資料）
+board/bbg/rootfs-overlay/etc/wpa_supplicant.conf
+board/bbg/rootfs-overlay/etc/hostapd.conf
+
+# 任何金鑰
+*.key
+*.pem
+id_rsa*
+*.p12
+
+# 本機環境
+.env
+.envrc

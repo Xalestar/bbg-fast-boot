@@ -1,0 +1,14 @@
+--- a/arch/arm/boot/dts/ti/omap/am335x-bonegreen-wireless.dts	2026-06-20 22:58:03.691769963 +0800
++++ b/arch/arm/boot/dts/ti/omap/am335x-bonegreen-wireless.dts	2026-06-20 22:59:33.160486967 +0800
+@@ -125,3 +125,11 @@
+ 		line-name = "MCASP0_AHCLKR";
+ 	};
+ };
++
++/* Disable unused eMMC (0x481d8000 = dts label mmc2 = Linux mmc1).
++ * Overrides status="okay" set in am335x-bonegreen-common.dtsi.
++ * SD (mmc1/Linux mmc0) and SDIO Wi-Fi (mmc3/Linux mmc2) are untouched.
++ */
++&mmc2 {
++	status = "disabled";
++};

@@ -30,5 +30,5 @@ get_iface_info() {
 printf '['
 get_iface_info wlan0
 printf ','
-get_iface_info enu1u1
+get_iface_info eth0
 printf ']'
